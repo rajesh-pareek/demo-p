@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    box-sizing: border-box;
+    font-size:16px;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    background-color:rgb(23, 23, 23);
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+}
+
+main{
+    margin:0;
+    padding:0;
+    background-color:lightgray;
+    width:100%;
+    height:auto;
+}
+
+#navbar{
+    background-color:black;
+    margin:0 0;
+    width:100%;
+    height:4rem;
+    text-align:right;
+    padding-right:3rem;
+    padding-top:1rem;
+}
+#navbar a{
+    margin:0;
+    text-decoration:none;
+    font-size:1.5rem;
+    margin-right:2rem;
+    color:crimson;
+}
+#navbar a:last-of-type{
+    margin-right:0;
+}
+#navbar a:hover{
+    color:gray;
+}
+
+
+/*   welcome section */
+
+#welcome-section{
+    margin:0;
+    padding-top:15%;
+    width:100%;
+    height:100vh;
+    background-color:rgb(0, 0, 0);
+    text-align:center;
+
+}
+#welcome-section h1{
+    font-size:3.6rem;
+    color:whitesmoke;
+}
+#welcome-section p{
+    font-size:2rem;
+    color:crimson;
+}
+
+/* project section */
+
+#project-section{
+    width:100%;
+    height:auto;
+
+    background-color:gray;
+}
+
+.heading{
+    width:100%;
+    height:100px;
+    background-color:white;
+    text-align:center;
+    font-size:2.3rem;
+}
+.project{
+    width:100%;
+    height:auto;
+    padding:20px;
+    background-color:pink;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.project-tile{
+    width:27%;
+    height:auto;
+    background-color:green;
+    margin:20px;
+    text-align:center;
+}
+
+.img-container{
+    width:100%;
+    height:auto
+
+}
+.img-container img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+}
+.project-tile h1{
+    font-size:2rem;
+    width:100%;
+    height:auto;
+
+}
+
+@media (max-width:800px){
+    html{
+        font-size:12px;
+    }
+    .project-tile{
+        width:90%;
+    }
+    .heading h1{
+        font-size:3rem;
+        
+    }
+    #navbar{
+        text-align:center;
+        padding:1rem;
+        
+    }
+    #navbar a{
+        margin:10% 6%;
+        
+    }
+    #welcome-section{
+        height:90vh;
+        padding-top:200px;
+        vertical-align:middle;
+        
+
+    }
+    #welcome-section h1{
+        font-size:2rem;
+        
+    }
+    #welcome-section p{
+        font-size:1.5rem;
+    }
+    
+}
